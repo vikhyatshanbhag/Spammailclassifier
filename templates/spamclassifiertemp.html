@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<title>Spam message classifier</title>
+<head>
+<body>
+<h1>Enter the message below</h1>
+<input style="height:50px;width:400px;font-size:14pt;" type="text" id='message'></input><br><br>
+<input type="submit" id='sub'></input>
+{% if spam=='ham' %}
+	<h1>The entered message is <b style="color:green;">not SPAM<b></h1>
+{% elif spam=='spam' %}
+	<h1>The entered message is <b style="color:red;">SPAM<b></h1>
+{% endif %}
+</form>
+</body>
+</html>
